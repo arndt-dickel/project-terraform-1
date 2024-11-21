@@ -36,8 +36,8 @@ jobs:
         id: plan
         run: terraform plan
 
-      - name: Terraform apply infrastructure
-        run: terraform apply -auto-approve
+      # - name: Terraform apply infrastructure
+      #   run: terraform apply -auto-approve
 
-      # - name: Terraform destroy infrastructure
-      #   run: terraform destroy -auto-approve
+      - name: Terraform destroy infrastructure
+        run: terraform destroy -auto-approve
